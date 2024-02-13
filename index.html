@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f7d3e3;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #e91e63;
+        }
+
+        p {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+
+
+    <audio controls>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+</head>
+<body> 
+    <h1>Happy Valentine's Day, [ShakillaJELEKSalsabila]!</h1>
+    <p>You are the sunshine that brightens up my days(ALAH TAI).</p>
+    <p>Thank you for being my love and my best friend(BOONK).</p>
+    <img src="chilla.jpeg" alt="SGT JLK">
+    <p>With love,</p>
+    <p>Fadhlan GANTEENG</p>
+
+</head>
+<body>
+
+ <h1>MAU MAKAN APA?</h1>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Choice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <p>!!KLIK GAMBAR BUAT MILIH!!:</p>
+
+    <img src="papaya.jpg" alt="Food Choice 1" onclick="notifyChoice('Food Choice 1')">
+    <img src="seirock.jpg" onclick="notifyChoice('Food Choice 2')">
+    <img src="pdg.jpg" onclick="notifyChoice('Food Choice 3')">
+    <img src="katsu.jpg" onclick="notifyChoice('Food Choice 4')">
+    <img src="trsh.jpg" onclick="notifyChoice('Food Choice 5')">
+
+    <script>
+       function notifyChoice(choice) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "notify.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            var message = "choice=" + encodeURIComponent(choice);
+            xhr.send(message);
+            alert("Your choice has been notified!");
+        }
+    </script>
+
+
+</body>
+</html>
+    
